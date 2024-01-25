@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 250,
-        height: 320,
+        height: 120,
         borderRadius: 4,
         marginBottom: 5,
     },
