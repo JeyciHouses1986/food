@@ -42,7 +42,7 @@ const ResultShowScreen = ({ navigation }) => {
                 keyExtractor={(photo) => photo}
                 renderItem={({ item }) => (
                     <Lightbox>
-                        <Image style={styles.image} source={{ uri: item }} />
+                        <Image resizeMode="contain" style={styles.image} source={{ uri: item }} />
                     </Lightbox>
                 )}
             />
@@ -66,10 +66,8 @@ const styles = StyleSheet.create({
         height: 'auto',
     },
     image: {
+        flex: 1,
         margin: 5,
-        borderWidth: 2,
-        borderRadius: 10,
-        borderColor: 'black',
         height: 200,
         width: 400,
     }
